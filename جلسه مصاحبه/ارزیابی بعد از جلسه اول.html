@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گزارش مصاحبه استخدامی - امیر خداوردی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        .progress-bar-bg {
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            overflow: hidden;
+            height: 12px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 1s ease-out;
+            width: 0; /* Start at 0 for animation */
+        }
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 pb-12">
+
+    <!-- Header / Title -->
+    <header class="bg-white shadow-sm border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-clipboard-list text-3xl text-indigo-600"></i>
+                <h1 class="text-2xl font-bold text-slate-900">گزارش مصاحبه استخدامی</h1>
+            </div>
+            <div class="text-slate-500 text-sm">
+                تاریخ تهیه گزارش: ۷ دی ۱۴۰۴
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-8 space-y-8">
+
+        <!-- Candidate Profile -->
+        <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+            <div class="bg-indigo-50 px-6 py-4 border-b border-indigo-100 flex items-center gap-2">
+                <i class="fa-solid fa-user text-indigo-600"></i>
+                <h2 class="font-bold text-lg text-indigo-900">مشخصات کاندید</h2>
+            </div>
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">نام و نام‌خانوادگی</span>
+                            <span class="font-semibold">امیر خداوردی</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">پوزیشن</span>
+                            <span class="font-semibold">مدیر فروش سازمانی (B2B)</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">تاریخ مصاحبه</span>
+                            <span class="font-semibold">۷ دی ۱۴۰۴</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">لینکدین</span>
+                            <a href="https://www.linkedin.com/in/amir-khodamoradi/" target="_blank" class="text-blue-600 hover:underline flex items-center gap-1">
+                                پروفایل
+                                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Scoring -->
+        <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+            <div class="bg-slate-50 px-6 py-4 border-b border-slate-100 flex items-center gap-2">
+                <i class="fa-solid fa-chart-simple text-slate-600"></i>
+                <h2 class="font-bold text-lg text-slate-800">امتیازدهی کلی مهارت‌ها</h2>
+            </div>
+            <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                <!-- Intelligence -->
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">هوشمندی</span>
+                        <span class="text-red-600 font-bold text-sm">۲/۱۰ ⛔</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill bg-red-500" data-width="20%"></div>
+                    </div>
+                </div>
+                <!-- Passion -->
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">اشتیاق و انگیزه</span>
+                        <span class="text-red-600 font-bold text-sm">۲/۱۰ ⛔</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill bg-red-500" data-width="20%"></div>
+                    </div>
+                </div>
+                <!-- Growth Mindset -->
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">ذهنیت رشد</span>
+                        <span class="text-red-600 font-bold text-sm">۱/۱۰ ⛔</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill bg-red-500" data-width="10%"></div>
+                    </div>
+                </div>
+                <!-- Communication -->
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">ارتباط مؤثر</span>
+                        <span class="text-red-600 font-bold text-sm">۱/۱۰ ⛔</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill bg-red-500" data-width="10%"></div>
+                    </div>
+                </div>
+                <!-- Responsibility -->
+                <div class="md:col-span-2">
+                    <div class="flex justify-between mb-1">
+                        <span class="font-medium">مسئولیت‌پذیری</span>
+                        <span class="text-amber-500 font-bold text-sm">۵/۱۰ ⚠️</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill bg-amber-400" data-width="50%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Critical Weaknesses -->
+        <section>
+            <div class="flex items-center gap-2 mb-4">
+                <i class="fa-solid fa-circle-exclamation text-red-600 text-xl"></i>
+                <h2 class="text-2xl font-bold text-slate-800">نقاط ضعف بحرانی</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Communication Weaknesses -->
+                <div class="bg-white rounded-xl shadow-sm border border-red-100 p-6">
+                    <h3 class="font-bold text-lg text-red-800 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-microphone-slash"></i>
+                        مهارت‌های ارتباطی و فن بیان
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                            <div><strong class="text-slate-800">صدای ضعیف:</strong> <span class="text-slate-600 text-sm">صدای آرام با لحن یکنواخت و بدون انرژی</span></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                            <div><strong class="text-slate-800">لکنت زبان:</strong> <span class="text-slate-600 text-sm">مخصوصاً هنگام سوالات چالشی</span></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                            <div><strong class="text-slate-800">زبان بدن خشک:</strong> <span class="text-slate-600 text-sm">یکنواخت، بدون شور و شوق</span></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                            <div><strong class="text-slate-800">معرفی ضعیف:</strong> <span class="text-slate-600 text-sm">نتوانست خودش را به‌خوبی معرفی کند</span></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                            <div><strong class="text-slate-800">پرکننده‌های بی‌ارزش:</strong> <span class="text-slate-600 text-sm">استفاده زیاد از کلمه «لذا» و جملات بی‌محتوا</span></div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                            <div><strong class="text-slate-800">عدم Engage کردن:</strong> <span class="text-slate-600 text-sm">نتوانست مصاحبه‌کننده‌ها را درگیر کند</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Understanding Weaknesses -->
+                <div class="bg-white rounded-xl shadow-sm border border-red-100 p-6">
+                    <h3 class="font-bold text-lg text-red-800 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-brain"></i>
+                        درک و پاسخ‌دهی
+                    </h3>
+                    <div class="bg-red-50 p-4 rounded-lg border border-red-100 text-sm mb-4">
+                        <p class="font-semibold text-red-900 mb-2">⚠️ الگوی رفتاری مشکل‌ساز:</p>
+                        <div class="flex flex-col items-center text-center gap-1 text-red-800">
+                            <span>سوال مستقیم</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                            <span>عدم درک</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                            <span>پیچاندن سوال</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                            <span>پاسخ غیرمستقیم و مبهم</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                        <p class="text-xs text-slate-500 font-bold mb-1">مثال واقعی:</p>
+                        <p class="text-sm text-slate-800 mb-2"><strong>سوال:</strong> چطوری OKR تنظیم می‌کردی؟</p>
+                        <p class="text-sm text-slate-600 italic mb-2">«ما ۲ سال پیش که تو شرکت بودیم بعد یه مشتری داشتیم که اینطوری بود و...»</p>
+                        <p class="text-xs text-red-600 font-bold">❌ نتیجه: هیچ پاسخ مشخصی ارائه نشد</p>
+                    </div>
+                </div>
+
+                <!-- Sales Knowledge -->
+                <div class="bg-white rounded-xl shadow-sm border border-red-100 p-6 lg:col-span-2">
+                    <h3 class="font-bold text-lg text-red-800 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase"></i>
+                        دانش تخصصی فروش
+                    </h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-right">
+                            <thead class="bg-slate-50 text-slate-700">
+                                <tr>
+                                    <th class="px-4 py-3 rounded-r-lg">موضوع</th>
+                                    <th class="px-4 py-3">وضعیت</th>
+                                    <th class="px-4 py-3 rounded-l-lg">توضیحات</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">تعریف فروش</td>
+                                    <td class="px-4 py-3 text-red-600 font-bold">⛔ ضعیف</td>
+                                    <td class="px-4 py-3 text-slate-600">«یعنی اعتماد کردن آدما به من» - سطحی و غیرحرفه‌ای</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">ویژگی فروشنده خوب</td>
+                                    <td class="px-4 py-3 text-red-600 font-bold">⛔ نمی‌دانست</td>
+                                    <td class="px-4 py-3 text-slate-600">پاسخ مشخصی نداشت</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">مذاکره حرفه‌ای</td>
+                                    <td class="px-4 py-3 text-red-600 font-bold">⛔ نمی‌دانست</td>
+                                    <td class="px-4 py-3 text-slate-600">فرآیند مذاکره را نمی‌شناخت</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">مدیریت تیم</td>
+                                    <td class="px-4 py-3 text-red-600 font-bold">⛔ مبهم</td>
+                                    <td class="px-4 py-3 text-slate-600">ادعای داشتن نیرو بدون توضیح نحوه مدیریت</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-medium">CRM</td>
+                                    <td class="px-4 py-3 text-amber-500 font-bold">⚠️ سطحی</td>
+                                    <td class="px-4 py-3 text-slate-600">اسم ابزارها را گفت ولی نحوه استفاده را توضیح نداد</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Growth & Passion -->
+                <div class="bg-white rounded-xl shadow-sm border border-red-100 p-6">
+                    <h3 class="font-bold text-lg text-red-800 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-book-open"></i>
+                        ذهنیت رشد و یادگیری
+                    </h3>
+                    <ul class="space-y-2 text-sm text-slate-700">
+                        <li class="flex items-center gap-2 bg-red-50 p-2 rounded">
+                            <i class="fa-solid fa-circle text-[8px] text-red-400"></i>
+                            فقط تجربه عملی (نه یادگیری ساختاریافته)
+                        </li>
+                        <li class="flex items-center gap-2 bg-red-50 p-2 rounded">
+                            <i class="fa-solid fa-circle text-[8px] text-red-400"></i>
+                            هیچ کتاب/دوره/پادکستی ذکر نکرد
+                        </li>
+                        <li class="flex items-center gap-2 bg-red-50 p-2 rounded">
+                            <i class="fa-solid fa-circle text-[8px] text-red-400"></i>
+                            برنامه مشخصی برای آینده نداشت
+                        </li>
+                        <li class="flex items-center gap-2 bg-red-50 p-2 rounded">
+                            <i class="fa-solid fa-circle text-[8px] text-red-400"></i>
+                            بعد از فکر طولانی: ۲ کتاب (اسم یکی را به یاد آورد!)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-red-100 p-6">
+                    <h3 class="font-bold text-lg text-red-800 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-heart-crack"></i>
+                        اشتیاق به موقعیت شغلی
+                    </h3>
+                    <div class="space-y-3">
+                         <div class="flex justify-between items-center border-b border-red-50 pb-2">
+                             <span class="text-sm text-slate-600">شناخت یکتانت</span>
+                             <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">«خیلی شناخت کمی دارم»</span>
+                         </div>
+                         <div class="flex justify-between items-center border-b border-red-50 pb-2">
+                             <span class="text-sm text-slate-600">جذابیت کار</span>
+                             <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">«تا حدودی برام جذابه»</span>
+                         </div>
+                         <div class="flex justify-between items-center border-b border-red-50 pb-2">
+                             <span class="text-sm text-slate-600">سوالات حرفه‌ای</span>
+                             <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">سوال مناسبی نپرسید</span>
+                         </div>
+                         <div class="flex justify-between items-center">
+                             <span class="text-sm text-slate-600">رفتار در جلسه</span>
+                             <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">گوشی‌اش را چک می‌کرد 📱</span>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Neutral Points -->
+        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+            <h2 class="font-bold text-lg text-slate-600 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-circle-info text-amber-400"></i>
+                نکات خنثی
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-slate-50 p-3 rounded border border-slate-100 text-center">
+                    <span class="block text-xs text-slate-500 mb-1">سابقه کار</span>
+                    <span class="font-medium text-slate-800">از ۱۳۹۷ (۴۰۰۰+ شرکت)</span>
+                </div>
+                <div class="bg-slate-50 p-3 rounded border border-slate-100 text-center">
+                    <span class="block text-xs text-slate-500 mb-1">تیم فعلی</span>
+                    <span class="font-medium text-slate-800">۵ نفره در حوزه ژنتیک</span>
+                </div>
+                <div class="bg-slate-50 p-3 rounded border border-slate-100 text-center">
+                    <span class="block text-xs text-slate-500 mb-1">نوع مشتریان</span>
+                    <span class="font-medium text-slate-800">آزمایشگاه‌ها، مهدکودک‌ها</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Red Flags -->
+        <section class="bg-red-50 border-2 border-red-200 rounded-xl p-6 relative overflow-hidden">
+            <div class="absolute top-0 left-0 p-4 opacity-10">
+                <i class="fa-solid fa-flag text-9xl text-red-600"></i>
+            </div>
+            <h2 class="font-bold text-xl text-red-700 mb-4 flex items-center gap-2 relative z-10">
+                <i class="fa-solid fa-flag"></i>
+                Red Flags (پرچم‌های قرمز)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 relative z-10">
+                <div class="flex items-center gap-2 bg-white/60 p-2 rounded">
+                    <i class="fa-solid fa-circle text-[8px] text-red-500"></i>
+                    <span class="text-red-900 text-sm font-medium">چک کردن گوشی حین مصاحبه</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/60 p-2 rounded">
+                    <i class="fa-solid fa-circle text-[8px] text-red-500"></i>
+                    <span class="text-red-900 text-sm font-medium">عدم آمادگی و تحقیق درباره شرکت</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/60 p-2 rounded">
+                    <i class="fa-solid fa-circle text-[8px] text-red-500"></i>
+                    <span class="text-red-900 text-sm font-medium">لکنت و قطع صدا در سوالات چالشی</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/60 p-2 rounded">
+                    <i class="fa-solid fa-circle text-[8px] text-red-500"></i>
+                    <span class="text-red-900 text-sm font-medium">ناتوانی در توضیح تجربیات مدیریتی</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/60 p-2 rounded">
+                    <i class="fa-solid fa-circle text-[8px] text-red-500"></i>
+                    <span class="text-red-900 text-sm font-medium">گفتن «تا حدودی جذاب» برای پوزیشن</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/60 p-2 rounded">
+                    <i class="fa-solid fa-circle text-[8px] text-red-500"></i>
+                    <span class="text-red-900 text-sm font-medium">هیچ‌وقت با مشتری درگیری جدی نداشته</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Conclusion -->
+        <section class="bg-slate-900 text-white rounded-2xl shadow-lg p-8 text-center relative overflow-hidden">
+             <!-- Background pattern -->
+             <div class="absolute top-0 right-0 w-32 h-32 bg-slate-800 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+             <div class="absolute top-0 left-0 w-32 h-32 bg-indigo-900 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+
+             <div class="relative z-10">
+                <h2 class="text-3xl font-bold mb-6">جمع‌بندی نهایی</h2>
+                
+                <div class="inline-block bg-red-600 text-white px-8 py-3 rounded-full text-xl font-bold mb-8 shadow-lg shadow-red-900/50">
+                    🔴 توصیه: رد شود
+                </div>
+
+                <div class="max-w-2xl mx-auto bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700">
+                    <h3 class="text-slate-300 text-sm uppercase tracking-wider mb-4 border-b border-slate-700 pb-2">دلایل اصلی رد صلاحیت</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-right">
+                        <div class="flex items-center gap-2 text-slate-200">
+                            <i class="fa-solid fa-circle-xmark text-red-400"></i>
+                            ضعف شدید در مهارت‌های ارتباطی
+                        </div>
+                        <div class="flex items-center gap-2 text-slate-200">
+                            <i class="fa-solid fa-circle-xmark text-red-400"></i>
+                            عدم تسلط بر مفاهیم پایه فروش B2B
+                        </div>
+                        <div class="flex items-center gap-2 text-slate-200">
+                            <i class="fa-solid fa-circle-xmark text-red-400"></i>
+                            فقدان ذهنیت رشد و یادگیری
+                        </div>
+                        <div class="flex items-center gap-2 text-slate-200">
+                            <i class="fa-solid fa-circle-xmark text-red-400"></i>
+                            انگیزه پایین برای موقعیت شغلی
+                        </div>
+                        <div class="flex items-center gap-2 text-slate-200 sm:col-span-2 justify-center">
+                            <i class="fa-solid fa-circle-xmark text-red-400"></i>
+                            ناتوانی در ارائه و توضیح شفاف
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-slate-800/80 p-4 rounded-lg border-l-4 border-amber-500 text-right text-sm leading-relaxed">
+                    <strong class="text-amber-400 block mb-1"><i class="fa-solid fa-lightbulb"></i> نکته پایانی:</strong>
+                    این کاندید برای پوزیشن <strong>مدیر فروش سازمانی</strong> که نیازمند مهارت‌های ارتباطی قوی، قدرت مذاکره و رهبری تیم است، <strong>مناسب نیست</strong>. ضعف در ابتدایی‌ترین مهارت یک مدیر فروش (یعنی ارتباط مؤثر و ارائه) نشان‌دهنده عدم تناسب جدی با این نقش است.
+                </div>
+             </div>
+        </section>
+
+    </main>
+    
+    <footer class="text-center text-slate-400 text-sm pb-8">
+        &copy; ۱۴۰۴ - محرمانه و داخلی
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const bars = document.querySelectorAll('.progress-bar-fill');
+                bars.forEach(bar => {
+                    const width = bar.getAttribute('data-width');
+                    if (width) {
+                        bar.style.width = width;
+                    }
+                });
+            }, 300);
+        });
+    </script>
+</body>
+</html>
